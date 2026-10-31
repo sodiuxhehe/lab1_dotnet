@@ -1,46 +1,37 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Привет от ИСП-243!");
-Console.WriteLine("Автор: Курочкина Софья");
-Console.WriteLine("Год: 2026");
+﻿int a = 15;
+int b = 4;
 
-int age = 18;
-double gpa = 4.5 
-bool isStudent = true;
-string name = "Софья";
+Console.WriteLine($"Сумма: {a + b}");
+Console.WriteLine($"Разность: {a - b}");
+Console.WriteLine($"Произведение: {a * b}");
+Console.WriteLine($"Частное (int): {a / b}");
+Console.WriteLine($"Остаток: {a % b}");
 
-Console.WriteLine(name);
-Console.WriteLine(age);
-Console.WriteLine(gpa);
-Console.WriteLine(isStudent);
+double result = (double) a / b;
+Console.WriteLine($"Частное (double): {result}");
 
-var city = "Волгоград"; // string 
-var year = 2026;        // int
-var pi = 3.14159;       // double 
-var isActive = true;    // bool
 
-string myName = "Софья";
-int myAge = 18;
-string myGroup = "ИСП-243";
+Console.WriteLine(Math.Abs(-5));
+Console.WriteLine(Math.Pow(2, 10));
+Console.WriteLine(Math.Sqrt(144));
+Console.WriteLine(Math.Max(10, 25));
+Console.WriteLine(Math.Min(10, 25));
+Console.WriteLine(Math.Round(3.567, 2));
 
-Console.WriteLine($"Меня зовут {myName}, мне {myAge} лет, я учусь в группе{myGroup}.");
 
-Console.Wtire("Введите ваш возраст: ");
-string input = Console.ReadLine();
-int age2 = int.Parse(input)
-Console.WriteLine($"Через 10 лет вам будет {age2 + 10} лет.");
+Console.WriteLine("Калькулятор");
 
-int x = 10;
-int y = 3;
-Console.WriteLine(x + y); // 13
-Console.WriteLine(x - y); // 7
-Console.WriteLine(x * y); // 30
-Console.WriteLine(x / y); // 3
-Console.WriteLine(x % y); // 1
+Console.Write("Введите первое число: ");
+double num1 = double.Parse(Console.ReadLine());
 
-string firstName = "Софа";
-string lastName = "Курочкина";
-string group = "ИСП-243";
-int birthYear = 2008;
-double gpa = 4.5;
-bool hasScholarship = true;
+Console.Write("Введите второе число: ");
+double num2 = double.Parse(Console.ReadLine());
 
+Console.WriteLine($"Сумма: {num1 + num2}");
+Console.WriteLine($"Разность: {num1 - num2}");
+Console.WriteLine($"Произведение: {num1 * num2}");
+
+if (num2 != 0)
+    Console.WriteLine($"Частное: {num1 / num2}");
+else
+    Console.WriteLine("Деление на ноль невозможно!");
